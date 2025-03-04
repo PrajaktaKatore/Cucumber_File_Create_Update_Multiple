@@ -1,0 +1,5 @@
+Step\SignUpPageAction.class
+Step\AddPageAction.class
+stepDefination\Main.class
+Step\LoginPageAction.class
+Runner\RunCucumberTest.class

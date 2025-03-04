@@ -1,0 +1,74 @@
+-------------------------------------------------------------------------------
+Test set: Runner.RunCucumberTest
+-------------------------------------------------------------------------------
+Tests run: 3, Failures: 0, Errors: 3, Skipped: 0, Time elapsed: 46.389 sec <<< FAILURE!
+Account Registration(Account Management on Demoblaze Site)  Time elapsed: 1.235 sec  <<< ERROR!
+io.cucumber.junit.UndefinedStepException: The step 'I enter "studymailid12@gmail.com on"' and 2 other step(s) are undefined.
+You can implement these steps using the snippet(s) below:
+
+@When("I enter {string}")
+public void i_enter(String string) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Then("I click on {string}  on page")
+public void i_click_on_on_page(String string) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+
+Login into demoblaze site with valid credentials(Account Management on Demoblaze Site)  Time elapsed: 3.212 sec  <<< ERROR!
+org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <a class="nav-link" href="#" id="login2" data-toggle="modal" data-target="#logInModal" style="display: block;">...</a> is not clickable at point (1289, 37). Other element would receive the click: <div class="modal fade show" id="signInModal" tabindex="-1" role="dialog" aria-labelledby="signInModalLabel" style="display: block;">...</div>
+  (Session info: chrome=133.0.6943.142)
+Build info: version: '4.28.1', revision: '73f5ad48a2'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.8'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [08d7b17ff4d8ae297bb001e1634e0220, clickElement {id=f.B7C358D5EA06FDF0D182EA1A4766CC9F.d.3EA6DB5152CDC8B9E793E0B7E4477CBB.e.88}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 133.0.6943.142, chrome: {chromedriverVersion: 133.0.6943.141 (2a5d6da0d61..., userDataDir: C:\Users\PRAJAK~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:49351}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:49351/devtoo..., se:cdpVersion: 133.0.6943.142, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (08d7b17ff4d8ae297bb001e1634e0220)] -> xpath: /html/body/nav/div[1]/ul/li[5]/a]
+Session ID: 08d7b17ff4d8ae297bb001e1634e0220
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+	at stepDefination.Main.IclickonLoginontheHomePage(Main.java:78)
+	at ?.I click on "Log in" on the "Home" Page(file:///E:/ALM/Xray%20POC's/Xray_Jenkins_Integration/Cucumber/Cucumber_Demo_Multiple_Test_Cases/src/test/Features/demoblaze.feature:21)
+
+Add product into cart(Account Management on Demoblaze Site)  Time elapsed: 2.519 sec  <<< ERROR!
+org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <a href="prod.html?idp_=1" class="hrefch">...</a> is not clickable at point (800, 640). Other element would receive the click: <div class="modal fade show" id="signInModal" tabindex="-1" role="dialog" aria-labelledby="signInModalLabel" style="display: block;">...</div>
+  (Session info: chrome=133.0.6943.142)
+Build info: version: '4.28.1', revision: '73f5ad48a2'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.8'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [08d7b17ff4d8ae297bb001e1634e0220, clickElement {id=f.B7C358D5EA06FDF0D182EA1A4766CC9F.d.3EA6DB5152CDC8B9E793E0B7E4477CBB.e.107}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 133.0.6943.142, chrome: {chromedriverVersion: 133.0.6943.141 (2a5d6da0d61..., userDataDir: C:\Users\PRAJAK~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:49351}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:49351/devtoo..., se:cdpVersion: 133.0.6943.142, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (08d7b17ff4d8ae297bb001e1634e0220)] -> xpath: /html/body/div[5]/div/div[2]/div/div[1]/div/div/h4/a]
+Session ID: 08d7b17ff4d8ae297bb001e1634e0220
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+	at stepDefination.Main.Click_On_Product(Main.java:110)
+	at ?.I click on "Samsung galaxy s6" on the Page(file:///E:/ALM/Xray%20POC's/Xray_Jenkins_Integration/Cucumber/Cucumber_Demo_Multiple_Test_Cases/src/test/Features/demoblaze.feature:35)
+

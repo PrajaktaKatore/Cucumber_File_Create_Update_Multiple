@@ -26,7 +26,7 @@ Then     I click on "Log in"
 
 Examples:
 | name     	 |  email							          	| password	  |
-| Prajakta   |	studymailid12@gmail.com				        | Prajakta@123    |
+| Prajakta   |	studymailid12@gmail.com				        | Prajakta@12    |
 
 
 Scenario Outline: Add product into cart
